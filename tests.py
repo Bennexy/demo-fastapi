@@ -6,7 +6,12 @@ data = {
 }
 
 
-res = requests.post("http://127.0.0.1:8080/add", data=data)
+res = requests.post("http://127.0.0.1:8080/calc/add", data=data)
+
+print(res.text)
+
+
+res = requests.post("http://127.0.0.1:8080/calc/multiply", data=data)
 
 print(res.text)
 
